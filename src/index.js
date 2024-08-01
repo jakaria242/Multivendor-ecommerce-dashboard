@@ -6,6 +6,7 @@ import { Toaster } from 'react-hot-toast';
 import './index.css';
 import reportWebVitals from './reportWebVitals';
 import { BrowserRouter } from 'react-router-dom';
+import MyComponent from './errorhandle/Error.jsx';
 const App = lazy(()=>import('./App'))
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
@@ -14,6 +15,7 @@ root.render(
     <Provider store={store}>
       <Suspense fallback="loding......">
         <App />
+        <MyComponent/>
         <Toaster 
           toastOptions={{
             position : "top-right",
