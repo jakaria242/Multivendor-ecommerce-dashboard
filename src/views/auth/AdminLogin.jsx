@@ -3,7 +3,7 @@ import { admin_login, messageClear } from '../../store/Reducers/authReducerSlice
 import { useDispatch, useSelector } from 'react-redux'
 import { PropagateLoader } from 'react-spinners'
 import toast from 'react-hot-toast'
-import { useNavigate } from 'react-router-dom'
+import { Link, useNavigate } from 'react-router-dom'
 
 
 const AdminLogin = () => {
@@ -64,7 +64,7 @@ const AdminLogin = () => {
 
            // you can use image or logo here
            */}
-           <h2 className='text-[28px] text-white text-center font-bold'>Jakaria <span className='text-[orange]'>Shops</span></h2>
+           <Link to='/'><h2 className='text-[28px] text-white text-center font-bold'>Jakaria <span className='text-[orange]'>Shops</span></h2></Link>
           <form onSubmit={handleSubmit}>
             <div className='flex flex-col w-full gap-1 mb-3'>
                 <label htmlFor="email">Email</label>
