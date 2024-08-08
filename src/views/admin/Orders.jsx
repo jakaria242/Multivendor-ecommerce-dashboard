@@ -41,7 +41,9 @@ const Orders = () => {
                        <div className='py-4 w-[13%]'>$756</div>
                        <div className='py-4 w-[18%]'>pending</div>
                        <div className='py-4 w-[18%]'>pending</div>
-                       <div className='py-4 w-[18%]'><Link>view</Link></div>
+                       <div className='py-4 w-[18%]'>
+                        <Link to="/admin/dashboard/order/details/1">view</Link>
+                        </div>
                        <div onClick={(e)=>setShow(!show)} className='py-4 w-[8%] cursor-pointer'><BsArrowBarDown/></div>
                   </div>
                </div>
