@@ -4,6 +4,11 @@ import { FaEdit, FaTrash } from 'react-icons/fa'
 import Pagination from '../Pagination'
 import { BsImage } from 'react-icons/bs'
 import { GrClose } from 'react-icons/gr'
+import image1 from '../../assets/images/category/1.jpg'
+import image2 from '../../assets/images/category/2.jpg'
+import image3 from '../../assets/images/category/3.jpg'
+import image4 from '../../assets/images/category/4.jpg'
+import image5 from '../../assets/images/category/5.jpg'
 
 const Category = () => {
 
@@ -11,6 +16,30 @@ const Category = () => {
   const [searchValue, setSearchValue] = useState("")
   const [parPage, setParPage] = useState(5)
   const [show, setShow] = useState(false)
+
+
+  const categoryimage = [
+   {
+      id: 0,
+      image: image1,
+   },
+   {
+      id: 1,
+      image: image2,
+   },
+   {
+      id: 2,
+      image: image3,
+   },
+   {
+      id: 3,
+      image: image4,
+   },
+   {
+      id: 4,
+      image: image5,
+   },
+  ]
 
 
 
@@ -43,11 +72,11 @@ const Category = () => {
                   </thead>
                   <tbody>
                      {
-                        [1,2,3,4,5].map((item, index)=>(
+                       categoryimage.map((item, index)=>(
                             <tr key={index}>
-                            <td scope='row' className='py-1 px-4 font-medium whitespace-nowrap'>{item}</td>
+                            <td scope='row' className='py-1 px-4 font-medium whitespace-nowrap'>{item.id + 1}</td>
                             <td scope='row' className='py-1 px-4 font-medium whitespace-nowrap'>
-                              <img className='w-[45px] h-[45px]' src={`http://localhost:3000/images/category/${item}.jpg`}alt="image" />
+                              <img className='w-[45px] h-[45px]' src={item.image} alt="image" />
                             </td>
                             <td scope='row' className='py-1 px-4 font-medium whitespace-nowrap'><span>Cloth</span></td>
                             <td scope='row' className='py-1 px-4 font-medium whitespace-nowrap'>

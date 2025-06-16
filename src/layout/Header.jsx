@@ -1,5 +1,6 @@
 import React from 'react'
 import { FaList } from 'react-icons/fa'
+import adminPic from "../assets/images/admin.jpg"
 
 const Header = ({showSidebar, setShowSidebar}) => {
   return (
@@ -19,7 +20,7 @@ const Header = ({showSidebar, setShowSidebar}) => {
                          <span className='text-[14px] w-full font-normal'>Admin</span>
                     </div>
                     <div>
-                      <img className='w-[45px] h-[45px] rounded-full overflow-hidden' src="http://localhost:3000/images/admin.jpg" alt="" />
+                      <img className='w-[45px] h-[45px] rounded-full overflow-hidden' src={adminPic} alt="" />
                     </div>
                   </div>
                </div>

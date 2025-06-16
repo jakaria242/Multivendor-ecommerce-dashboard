@@ -5,6 +5,7 @@ import { FaUsers } from 'react-icons/fa'
 import { AiOutlineShoppingCart } from 'react-icons/ai'
 import Chart from 'react-apexcharts'
 import { Link } from 'react-router-dom'
+import adminPic from '../../assets/images/admin.jpg'
 
 const AdminDashboard = () => {
 
@@ -125,7 +126,7 @@ const AdminDashboard = () => {
                     <div className='flex flex-col gap-2 pt-6 text-[#d0d2d6]'>
                          <ol className='relative border-1 border-slate-600 ml-4'>
                              <li className='mb-3 ml-6'>
-                                <div className='flex absolute -left-5 shadow-lg justify-center items-center w-10 h-10 p-[6px] bg-[#00d1e848] rounded-full z-10'> <img className='w-full h-full rounded-full shadow-lg' src="http://localhost:3000/images/admin.jpg" alt="image" /> </div>
+                                <div className='flex absolute -left-5 shadow-lg justify-center items-center w-10 h-10 p-[6px] bg-[#00d1e848] rounded-full z-10'> <img className='w-full h-full rounded-full shadow-lg' src={adminPic} alt="image" /> </div>
                                   <div className='p-3 bg-slate-800 rounded-lg border border-slate-600 shadow-sm'>
                                      <div className='flex justify-between items-center mb-2'>
                                        <Link className='text-md font-normal'>Admin</Link>
@@ -137,7 +138,7 @@ const AdminDashboard = () => {
                                    </div>
                              </li>
                              <li className='mb-3 ml-6'>
-                                <div className='flex absolute -left-5 shadow-lg justify-center items-center w-10 h-10 p-[6px] bg-[#00d1e848] rounded-full z-10'> <img className='w-full h-full rounded-full shadow-lg' src="http://localhost:3000/images/admin.jpg" alt="image" /> </div>
+                                <div className='flex absolute -left-5 shadow-lg justify-center items-center w-10 h-10 p-[6px] bg-[#00d1e848] rounded-full z-10'> <img className='w-full h-full rounded-full shadow-lg' src={adminPic} alt="image" /> </div>
                                   <div className='p-3 bg-slate-800 rounded-lg border border-slate-600 shadow-sm'>
                                      <div className='flex justify-between items-center mb-2'>
                                        <Link className='text-md font-normal'>Admin</Link>
@@ -149,7 +150,7 @@ const AdminDashboard = () => {
                                    </div>
                              </li>
                              <li className='mb-3 ml-6'>
-                                <div className='flex absolute -left-5 shadow-lg justify-center items-center w-10 h-10 p-[6px] bg-[#00d1e848] rounded-full z-10'> <img className='w-full h-full rounded-full shadow-lg' src="http://localhost:3000/images/admin.jpg" alt="image" /> </div>
+                                <div className='flex absolute -left-5 shadow-lg justify-center items-center w-10 h-10 p-[6px] bg-[#00d1e848] rounded-full z-10'> <img className='w-full h-full rounded-full shadow-lg' src={adminPic} alt="image" /> </div>
                                   <div className='p-3 bg-slate-800 rounded-lg border border-slate-600 shadow-sm'>
                                      <div className='flex justify-between items-center mb-2'>
                                        <Link className='text-md font-normal'>Admin</Link>

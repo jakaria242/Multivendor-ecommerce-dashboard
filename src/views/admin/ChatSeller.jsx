@@ -1,6 +1,7 @@
 import React, { useState } from 'react'
 import { IoMdClose } from 'react-icons/io'
 import { FaList } from 'react-icons/fa'
+import adminPic from '../../assets/images/admin.jpg'
 
 const ChatSeller = () => {
     const [show, setShow] = useState(false)
@@ -17,7 +18,7 @@ const ChatSeller = () => {
                   </div>
                   <div className={`h-[60px] flex justify-start items-center gap-2 text-white px-2 py-2 rounded-sm cursor-pointer bg-slate-700`}>
                      <div className='relative'>
-                        <img className='w-[38px] h-[38px] border-2 border-white max-w-[38px] p-[2px] rounded-full' src="http://localhost:3000/images/admin.jpg" alt="image" />
+                        <img className='w-[38px] h-[38px] border-2 border-white max-w-[38px] p-[2px] rounded-full' src={adminPic} alt="image" />
                         <div className='w-[10px] h-[10px] bg-green-500 rounded-full absolute right-0 bottom-0'></div>
                      </div>
                       <div className='flex justify-center items-start flex-col w-full'>
@@ -28,7 +29,7 @@ const ChatSeller = () => {
                   </div>
                   <div className={`h-[60px] flex justify-start items-center gap-2 text-white px-2 py-2 rounded-sm cursor-pointer`}>
                      <div className='relative'>
-                        <img className='w-[38px] h-[38px] border-2 border-white max-w-[38px] p-[2px] rounded-full' src="http://localhost:3000/images/admin.jpg" alt="image" />
+                        <img className='w-[38px] h-[38px] border-2 border-white max-w-[38px] p-[2px] rounded-full' src={adminPic} alt="image" />
                         <div className='w-[10px] h-[10px] bg-green-500 rounded-full absolute right-0 bottom-0'></div>
                      </div>
                       <div className='flex justify-center items-start flex-col w-full'>
@@ -39,7 +40,7 @@ const ChatSeller = () => {
                   </div>
                   <div className={`h-[60px] flex justify-start items-center gap-2 text-white px-2 py-2 rounded-sm cursor-pointer`}>
                      <div className='relative'>
-                        <img className='w-[38px] h-[38px] border-2 border-white max-w-[38px] p-[2px] rounded-full' src="http://localhost:3000/images/admin.jpg" alt="image" />
+                        <img className='w-[38px] h-[38px] border-2 border-white max-w-[38px] p-[2px] rounded-full' src={adminPic} alt="image" />
                         <div className='w-[10px] h-[10px] bg-green-500 rounded-full absolute right-0 bottom-0'></div>
                      </div>
                       <div className='flex justify-center items-start flex-col w-full'>
@@ -56,7 +57,7 @@ const ChatSeller = () => {
                   sellerId &&  
                   <div className='flex justify-start items-center gap-3'>
                      <div className='relative'>
-                        <img className='w-[42px] h-[42px] border-2 border-green-500 max-w-[42px] p-[2px] rounded-full' src="http://localhost:3000/images/admin.jpg" alt="image" />
+                        <img className='w-[42px] h-[42px] border-2 border-green-500 max-w-[42px] p-[2px] rounded-full' src={adminPic} alt="image" />
                         <div className='w-[10px] h-[10px] bg-green-500 rounded-full absolute right-0 bottom-0'></div>
                      </div>
                   </div>
@@ -70,7 +71,7 @@ const ChatSeller = () => {
                   <div className='w-full flex justify-start items-center'>
                      <div className='flex justify-start items-start gap-2 md:px-3 py-2 max-full lg:max-[85%]'>
                         <div>
-                          <img className='w-[38px] h-[38px] border-2 border-white max-w-[38px] p-[3px] rounded-full' src="http://localhost:3000/images/admin.jpg" alt="image" />
+                          <img className='w-[38px] h-[38px] border-2 border-white max-w-[38px] p-[3px] rounded-full' src={adminPic} alt="image" />
                         </div>
                         <div className='flex justify-center items-start flex-col w-full bg-orange-500 shadow-lg shadow-orange-500/50 text-white px-2 py-1 rounded-md'>
                           <span>How are you ?</span>
@@ -84,7 +85,7 @@ const ChatSeller = () => {
                           <span>i am fine and you</span>
                         </div>
                         <div>
-                          <img className='w-[38px] h-[38px] border-2 border-white max-w-[38px] p-[3px] rounded-full' src="http://localhost:3000/images/admin.jpg" alt="image" />
+                          <img className='w-[38px] h-[38px] border-2 border-white max-w-[38px] p-[3px] rounded-full' src={adminPic} alt="image" />
                         </div>
                      </div>
                   </div>
@@ -92,7 +93,7 @@ const ChatSeller = () => {
                   <div className='w-full flex justify-start items-center'>
                      <div className='flex justify-start items-start gap-2 md:px-3 py-2 max-full lg:max-[85%]'>
                         <div>
-                          <img className='w-[38px] h-[38px] border-2 border-white max-w-[38px] p-[3px] rounded-full' src="http://localhost:3000/images/admin.jpg" alt="image" />
+                          <img className='w-[38px] h-[38px] border-2 border-white max-w-[38px] p-[3px] rounded-full' src={adminPic} alt="image" />
                         </div>
                         <div className='flex justify-center items-start flex-col w-full bg-orange-500 shadow-lg shadow-orange-500/50 text-white px-2 py-1 rounded-md'>
                           <span>I am also fine</span>
@@ -106,7 +107,7 @@ const ChatSeller = () => {
                           <span>what are you doing</span>
                         </div>
                         <div>
-                          <img className='w-[38px] h-[38px] border-2 border-white max-w-[38px] p-[3px] rounded-full' src="http://localhost:3000/images/admin.jpg" alt="image" />
+                          <img className='w-[38px] h-[38px] border-2 border-white max-w-[38px] p-[3px] rounded-full' src={adminPic} alt="image" />
                         </div>
                      </div>
                   </div>
